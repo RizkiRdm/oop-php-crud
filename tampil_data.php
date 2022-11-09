@@ -47,7 +47,7 @@ include "user.php";
                             </button>
                             ||
                             <button class="btn btn-warning">
-                                <a href="hapus_user?id=<?php echo $row['username']; ?>" class="text-decoration-none text-white">Hapus User</a>
+                                <a href="hapus_user.php?id=<?php echo $row['username']; ?>" class="text-decoration-none text-white">Hapus User</a>
                             </button>
                         </td>
                     </tr>

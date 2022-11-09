@@ -38,6 +38,12 @@ class user extends koneksi
         return $this->hasil;
     }
 
+    public function HapusUser($username)
+    {
+        $this->query = mysqli_query($this->connect, "DELETE FROM user WHERE username = '$username' ");
+    }
+
+
     public function Login($username, $password)
     {
         if ($this->username === null) {
